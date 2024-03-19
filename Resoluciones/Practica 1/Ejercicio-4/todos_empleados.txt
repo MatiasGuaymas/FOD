@@ -1,0 +1,5 @@
+ 11 Guaymas Matias 73 0
+ 10 Perez Maria 34 1
+ 20 Lima Francisco 71 0
+ 2 Fischer Matias 81 8
+ 30 Guerrero Maria 60 0

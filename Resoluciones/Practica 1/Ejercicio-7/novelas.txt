@@ -1,0 +1,10 @@
+9 100.00 Aventura
+Principe
+2 300.00   Misterio
+Los crimenes de Alicia
+4 200.00   Historico
+Sobre heroes y tumbas
+7 150.00   Fantasia
+El señor de los anillos
+100 0.00 Miedo
+Probando

@@ -2,8 +2,14 @@
 15 5 Celular promedio
 A03
 5 1000.00 Apple
-3 5 Celular gama alta
+0 5 Celular gama alta
 iPhone15
 7 300.00 Xiaomi
 12 5 Celular gama media
 Xiaomi Pro
+9 100.00 Motorola
+2 8 Celular gama baja
+MotoG5
+100 900.00 Apple
+0 0 Celular gama alta
+iPhone13

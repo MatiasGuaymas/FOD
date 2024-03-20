@@ -105,8 +105,8 @@ begin
             read(arc, c);
             with c do
                 begin
-                    writeln(carga, codigo, precio:0:2, marca);
-                    writeln(carga, stock, stockMin, descripcion);
+                    writeln(carga, codigo, ' ', precio:0:2, marca);
+                    writeln(carga, stock, ' ', stockMin, descripcion);
                     writeln(carga, nombre);
                 end;
         end;

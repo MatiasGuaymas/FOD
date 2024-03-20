@@ -1,0 +1,6 @@
+5 1000.00 Apple
+0 5 Celular gama alta
+iPhone15
+100 900.00 Apple
+0 0 Celular gama alta
+iPhone13

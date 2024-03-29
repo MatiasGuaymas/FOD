@@ -1,0 +1,44 @@
+1 101 1 La_Plata 
+Tolosa
+2022-01-01
+1500 Hospital_A
+1 101 1 La_Plata 
+Tolosa
+2022-01-01
+5 Hospital_A
+1 101 2 La_Plata 
+Tolosa
+2022-01-01
+7 Hospital_B
+1 102 3 La_Plata 
+Gonnet
+2022-01-02
+14 Hospital_C
+1 102 3 La_Plata 
+Gonnet
+2022-01-02
+8 Hospital_C
+1 102 4 La_Plata 
+Gonnet
+2022-01-02
+10 Hospital_D
+2 104 5 Mar_del_Plata
+La Perla
+2022-01-01
+8 Hospital_E
+2 104 5 Mar_del_Plata
+La Perla
+2022-01-01
+12 Hospital_E
+2 105 6 Mar_del_Plata
+Los Troncos 
+2022-01-03
+6 Hospital_F
+3 107 9 La_Matanza
+Ramos Mejia
+2022-01-10
+15 Hospital_G
+3 107 9 La_Matanza
+Ramos Mejia
+2022-01-10
+1600 Hospital_G

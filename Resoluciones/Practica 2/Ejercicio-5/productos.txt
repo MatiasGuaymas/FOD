@@ -1,0 +1,12 @@
+1 100 30 200 Yogur
+Muy rico
+2 100 25 100 Queso
+Muy cremoso
+3 100 20 300 Ensalada fresca
+Muy nutritiva
+4 100 15 400 Carne
+Muy jugosas
+5 100 10 500 Pescado
+Muy grasoso
+6 100 60 600 Bebida
+Muy carbonatada

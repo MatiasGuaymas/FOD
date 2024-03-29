@@ -15,7 +15,10 @@ puede venir 0 o N registros de un determinado producto}
 program ejercicio5;
 const
     valoralto = 999;
+    DF = 3;
+    //DF = 30;
 type
+    subrango = 1..DF;
     producto = record
         codigo: integer;
         nombre: string;
@@ -28,30 +31,10 @@ type
         codigo: integer;
         cant: integer;
     end;
-    detalle = file of infoDetalle;
     maestro = file of producto;
-    vecDetalles = array [1..30] of detalle;
-procedure cargarInfoDet(var infoDet: infoDetalle);
-begin
-    writeln('Ingrese un codigo del producto');
-    readln(infoDet.codigo);
-    if(infoDet.codigo <> -1) then
-        readln(infoDet.cant);
-end;
-procedure cargarArchivoDetalle(var det: detalle);
-var
-    infoDet: infoDetalle;
-    nombre: string;
-begin
-    rewrite(det);
-    cargarInfoDet(infoDet);
-    while(infoDet.codigo <> -1) do
-        begin
-            write(det, infoDet);
-            cargarInfoDet(infoDet);
-        end;
-    close(det);
-end;
+    detalle = file of infoDetalle;
+    vecDetalles = array [subrango] of detalle;
+    vecRegistros = array [subrango] of infoDetalle;
 procedure leer(var det: detalle; var infoDet: infoDetalle);
 begin
     if(not eof(det)) then
@@ -59,30 +42,148 @@ begin
     else
         infoDet.codigo := valoralto;
 end;
-procedure actualizarMaestro(var mae: maestro; var det: detalle);
+procedure minimo(var vec: vecDetalles; var vecReg: vecRegistros; var min: infoDetalle);
 var
-    infoDet: infoDetalle;
+    i, pos: subrango;
+begin
+    min.codigo:= valoralto;
+    for i:= 1 to DF do
+        if(vecReg[i].codigo < min.codigo) then
+            begin
+                min:= vecReg[i];
+                pos:= i;
+            end;
+    if(min.codigo <> valoralto) then
+        leer(vec[pos], vecReg[pos]);
+end;
+procedure reporte(var mae: maestro);
+var
+    p: producto;
+    txt: text;
+begin
+    assign(txt, 'reporte.txt');
+    reset(mae);
+    rewrite(txt);
+    while(not eof(mae)) do
+        begin
+            read(mae, p);
+            if(p.stockDisp < p.stockMin) then
+                writeln(txt, p.nombre,' ', p.descripcion,' ', p.stockDisp, ' ', p.precio:0:2);
+        end;
+    close(txt);
+end;
+procedure actualizarMaestro(var mae: maestro; var vec: vecDetalles);
+var
+    min: infoDetalle;
     infoMae: producto;
+    vecReg: vecRegistros;
+    i: subrango;
+    aux, cant: integer;
 begin
     reset(mae);
-    reset(det);
-    leer(det, infoDet);
-    while(infoDet <> valoralto) do
+    for i:= 1 to DF do
         begin
-            read(mae, infoMae);
-            while(infoMae.codigo <> infoDet.codigo) do
-                read(mae, infoMae);
-            while(infoMae.codigo = infoDet.codigo) do
+            reset(vec[i]);
+            leer(vec[i], vecReg[i]);
+        end;
+    minimo(vec, vecReg, min);
+    while(min.codigo <> valoralto) do
+        begin
+            aux:= min.codigo;
+            cant:= 0;
+            while(min.codigo <> valoralto) and (min.codigo = aux) do
                 begin
-                    if(infoMae.stockDisp < infoDet.cant) then
-                        infoMae.stockDisp := 0
-                    else
-                        infoMae.stockDisp := infoMae.stockDisp - infoDet.cant;
-                    leer(det, infoDet);
+                    cant:= cant + min.cant;
+                    minimo(vec, vecReg, min);
                 end;
+            read(mae, infoMae);
+            while(infoMae.codigo <> aux) do
+                read(mae, infoMae);
             seek(mae, filepos(mae)-1);
+            infoMae.stockDisp:= infoMae.stockDisp - cant;
             write(mae, infoMae);
         end;
+    reporte(mae);
     close(mae);
-    close(det);
+    for i:= 1 to DF do
+        close(vec[i]);
 end;
+procedure crearMaestro(var mae: maestro);
+var
+    txt: text;
+    p: producto;
+    nombre: string;
+begin
+    assign(txt, 'productos.txt');
+    reset(txt);
+    writeln('Ingrese un nombre para el archivo maestro');
+    readln(nombre);
+    assign(mae, nombre);
+    rewrite(mae);
+    while(not eof(txt)) do
+        begin
+            with p do
+                begin
+                    readln(txt, codigo, stockDisp, stockMin, precio, nombre);
+                    readln(txt, descripcion);
+                    write(mae, p);
+                end;
+        end;
+    writeln('Archivo binario maestro creado');
+    close(txt);
+    close(mae);
+end;
+procedure crearUnSoloDetalle(var det: detalle);
+var
+    carga: text;
+    nombre: string;
+    p: infoDetalle;
+begin
+    writeln('Ingrese la ruta del detalle');
+    readln(nombre);
+    assign(carga, nombre);
+    reset(carga);
+    writeln('Ingrese un nombre para el archivo detalle');
+    readln(nombre);
+    assign(det, nombre);
+    rewrite(det);
+    while(not eof(carga)) do
+        begin
+            with p do
+                begin
+                    readln(carga, codigo, cant);
+                    write(det, p);
+                end;
+        end;
+    writeln('Archivo binario detalle creado');
+    close(det);
+    close(carga);
+end;
+procedure crearDetalles(var vec: vecDetalles);
+var
+    i: subrango;
+begin
+    for i:= 1 to DF do
+        crearUnSoloDetalle(vec[i]);
+end;
+procedure imprimirMaestro(var mae: maestro);
+var
+    p: producto;
+begin
+    reset(mae);
+    while(not eof(mae)) do
+        begin
+            read(mae, p);
+            writeln('Codigo=', p.codigo, ' StockDisp=', p.stockDisp, ' StockMin=', p.stockMin, ' Precio=', p.precio:0:2, ' Nombre=', p.nombre, ' Desc=', p.descripcion);
+        end;
+    close(mae);
+end;
+var
+    vec: vecDetalles;
+    mae: maestro;
+begin
+    crearMaestro(mae);
+    crearDetalles(vec);
+    actualizarMaestro(mae, vec);
+    imprimirMaestro(mae);
+end.

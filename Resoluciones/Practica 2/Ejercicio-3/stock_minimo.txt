@@ -1,0 +1,3 @@
+Codigo=1 Precio=150.00 StockActual=0 StockMin=20 Nombre= Pepitos
+Codigo=2 Precio=200.00 StockActual=0 StockMin=50 Nombre= Oreos
+Codigo=4 Precio=100.00 StockActual=0 StockMin=15 Nombre= Saladix

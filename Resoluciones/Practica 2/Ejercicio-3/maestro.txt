@@ -1,0 +1,4 @@
+1 150 50 20 Pepitos
+2 200 60 50 Oreos
+3 400 30 10 Rumbas
+4 100 20 15 Saladix

@@ -1,0 +1,2 @@
+Codigo=1 NombreApellido= MatiasGuaymas MateriasConFinal=7 MateriasSinFinal=3
+Codigo=2 NombreApellido= FranciscoLima MateriasConFinal=5 MateriasSinFinal=2

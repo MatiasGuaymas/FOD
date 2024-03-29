@@ -1,0 +1,7 @@
+1 300 Matias
+1 200 Matias
+1 100 Matias
+2 400 Francisco
+3 200 Pepe
+3 100 Pepe
+4 1000 Josias

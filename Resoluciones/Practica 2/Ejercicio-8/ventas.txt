@@ -1,0 +1,18 @@
+111 2023 1 9 100 Matias
+Guaymas
+111 2023 1 8 200 Matias
+Guaymas
+111 2023 2 7 800 Matias
+Guaymas
+111 2024 1 6 0 Matias
+Guaymas
+111 2024 4 5 500 Matias
+Guaymas
+112 2023 2 4 100 Lucio
+Guaymas
+112 2023 2 3 200 Lucio
+Guaymas
+112 2024 7 2 0 Lucio
+Guaymas
+113 2024 1 1 0 Rosana
+Piovoso

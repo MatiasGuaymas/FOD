@@ -1,0 +1,10 @@
+100 1 0 0 0 0 Cepa1
+La Plata
+100 2 0 0 0 0 Cepa2
+La Plata
+101 1 0 0 0 0 Cepa1
+Varela
+101 2 0 0 0 0 Cepa2
+Varela
+102 1 0 0 0 0 Cepa1
+Merlo

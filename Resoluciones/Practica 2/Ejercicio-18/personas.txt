@@ -1,0 +1,3 @@
+Partida=1 Nombre=Pepe Apellido=Gege Direccion=Calle58 MatNacimiento=Materdei NAMadre=RoxanneP DNIMadre=222 NAPadre=OvyP DNIPadre=111
+Fallecido MatFallecimiento=Italiano FechaHora=19:05 Lugar=Calle10
+Partida=2 Nombre=Juan Apellido=Carn Direccion=Calle60 MatNacimiento=Hospital NAMadre=GagaT DNIMadre=444 NAPadre=PepE DNIPadre=333

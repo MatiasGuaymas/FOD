@@ -1,0 +1,16 @@
+100 10 Yamaha YZF-R6
+2021
+Yamaha
+Deportiva de alta cilindrada
+200 15 Honda CB500F
+2022
+Honda
+Naked de medio cilindraje
+300 8 Kawasaki Ninja ZX-10R
+2021
+Kawasaki
+Superbike de competicion
+400 12 Suzuki GSX-S750
+2020
+Suzuki
+Naked deportiva

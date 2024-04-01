@@ -1,0 +1,10 @@
+1 Buenos Aires
+1 1000 1000 500 500 500 La Plata
+1 Buenos Aires
+2 750 1000 500 500 500 Brandsen
+1 Buenos Aires
+3 500 1000 500 500 500 CABA
+2 Catamarca
+1 400 1000 500 500 500 El Alto
+2 Catamarca
+2 100 1000 500 500 500 Ancasti

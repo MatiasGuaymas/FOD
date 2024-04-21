@@ -1,0 +1,1 @@
+ Codigo=1 Genero=Ficcion Nombre=Los Vengadores Duracion=130.00 Director=Guaymas Precio=300.00Novela eliminada:  Codigo=0 Genero= Nombre= Duracion=0.00 Director= Precio=0.00

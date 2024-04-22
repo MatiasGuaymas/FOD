@@ -1,0 +1,12 @@
+10 100 500 Remera
+XL
+Rojo
+8 20 400 Short
+M
+Negro
+7 40 300 Medias
+Largas
+Blancas
+15 70 600 Sandalias
+Talle 40
+Azules

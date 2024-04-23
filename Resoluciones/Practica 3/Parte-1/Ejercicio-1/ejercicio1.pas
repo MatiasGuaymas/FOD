@@ -217,7 +217,7 @@ begin
         begin
             seek(arc, filePos(arc)-1);
             write(arc, ultEmp);
-            seek(arc, filePos(arc)-1);
+            seek(arc, fileSize(arc)-1);
             truncate(arc);
             writeln('Se encontro el empleado con codigo', cod , ' y se realizo la baja correctamente');
         end

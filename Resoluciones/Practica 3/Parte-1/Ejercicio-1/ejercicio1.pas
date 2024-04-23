@@ -223,9 +223,9 @@ begin
         end
     else
         begin
-            close(arc);
             writeln('No se encontro el empleado con codigo ', cod , ' y no se realizo ninguna baja');
         end;
+    close(arc);
 end;
 //-----------------------MENU DE OPCIONES-----------------------
 procedure menuOpciones(var arc: archivo);

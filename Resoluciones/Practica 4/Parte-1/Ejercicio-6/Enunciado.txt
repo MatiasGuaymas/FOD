@@ -1,0 +1,23 @@
+6. Suponga que se tiene un archivo que contiene información de los empleados de una
+empresa. De cada empleado se mantiene la siguiente información: DNI, legajo, nombre
+completo y salario. Considere que se mantiene además un índice, organizado como
+árbol B de orden 4, que provee acceso indizado a los empleados por su DNI. Grafique
+como queda el archivo de empleados (archivo de datos) y el archivo índice (árbol B)
+tras la inserción de los siguientes registros:
+DNI 		Legajo 		Nombre y apellido 	Salario
+35.000.000 	100 		Juan Perez 		$250000
+40.000.000 	101 		Lucio Redivo 		$400000
+32.000.000 	102 		Nicolás Lapro 		$720000
+28.000.000 	103 		Luis Scola 		$2000000
+26.000.000 	104 		Andres Nocioni 		$1500000
+37.000.000 	105 		Facundo Campazzo 	$1200000
+25.000.000 	106 		Emanuel Ginobili 	$5000000
+23.000.000 	107 		Pepe Sanchez 		$1000000
+21.000.000 	108 		Alejandro Montecchia 	$800000
+36.000.000 	109 		Marcos Delia 		$300000
+45.000.000 	110 		Leandro Bolmaro 	$600000
+Notas:
+● Grafique los estados de ambos archivos (datos e índice) cuando ocurren
+cambios relevantes en el índice como la creación de un nuevo nodo.
+● Además de graficar los archivos con sus respectivas estructuras internas, resulta
+útil que grafique la vista del archivo índice como un árbol B.

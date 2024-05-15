@@ -1,0 +1,5 @@
+8. Dado el siguiente árbol B de orden 4, mostrar cómo quedaría el mismo luego de realizar
+las siguientes operaciones: +5, +9, +80, +51, -50, -92.
+Política de resolución de underflows: derecha.
+				2: 0 (66) 1
+	0: (22)(32)(50) 			1: (77) (79) (92)

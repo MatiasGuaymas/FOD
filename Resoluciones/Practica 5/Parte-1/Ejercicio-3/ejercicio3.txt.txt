@@ -1,0 +1,7 @@
+3. Explique los conceptos de sinónimo, colisión y desborde (overflow). ¿Qué condición es
+necesaria en el archivo directo para que pueda ocurrir una colisión y no un desborde?
+Sinónimo: Situación en la que la función de hash genera una dirección de memoria para cierto registro que ya está siendo utilizada.
+Colisión: Situación en la que un registro es asignado a una dirección que está utilizada por otro registro.
+Desborde: Situación en la que un registro es asignado a una dirección que está utilizada por otro registro y no queda espacio para éste nuevo.
+Para que pueda ocurrir una colisión y no un desborde, debe haber espacio disponible en la dirección (en esta dirección, se
+encuentran uno o más registros previamente) asignada por la función de dispersión, donde irá el registro a almacenarse.

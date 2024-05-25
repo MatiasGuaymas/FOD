@@ -1,0 +1,9 @@
+2. Explique el concepto de función de dispersión. Enumere al menos tres funciones de
+dispersión y explique brevemente cómo funciona cada una.
+La función de dispersión es una caja negra que a partir de una clave genera la dirección física donde debe almacenarse el registro.
+Funciones de dispersión:
+-Centros cuadrados: Se toma una clave de 6 dígitios, se eleva al cuadrado, se toman los dígitos centrales 
+y se multiplican para mapear la cantidad de direcciones de memoria.
+-Division Hash: Se realiza k mod m, donde k es la llave y m es el tamaño de la tabla hash. El resultado será 
+la dirección de memoria donde se almacenará el registro.
+-Variante Knuth Division Hash: Es igual a la Division Hash, solo que al valor de k inicial se le suma 3 y luego se le aplica mod m.

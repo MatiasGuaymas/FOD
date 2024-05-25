@@ -1,4 +1,0 @@
-9. Dado el siguiente árbol B de orden 6, mostrar cómo quedaría el mismo luego de realizar
-las siguientes operaciones: +15, +71, +3, +48, -56, -71.
-Política de resolución de underflows: derecha o izquierda.
-			0: (34) (56) (78) (100) (176)

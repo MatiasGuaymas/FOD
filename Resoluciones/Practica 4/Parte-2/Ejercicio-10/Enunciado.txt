@@ -1,6 +1,0 @@
-10. Dado el siguiente árbol B de orden 5, mostrar cómo quedaría el mismo luego de realizar
-las siguientes operaciones: +450, -485, -511, -614.
-Política de resolución de underflows: derecha.
-
-					2: 0 (315) 1 (485) 4 (547) 5 (639) 3
-0: (148)(223) 		1: (333)(390)(442)(454) 	4: (508)(511) 		5: (614)(633) 		3: (789)(915)

@@ -1,0 +1,7 @@
+1. Defina el concepto de hashing (o dispersión). ¿Cómo se relaciona este concepto con archivos?
+Técnica para generar una dirección base única para una clave dada. Convierte la clave en un número aleatorio, 
+que luego sirve para determinar dónde se almacena la clave. Además utiliza una función de dispersión para mapear 
+cada clave con una dirección física de almacenamiento.
+
+
+

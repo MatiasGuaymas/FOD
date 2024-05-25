@@ -1,0 +1,6 @@
+5. Explique brevemente qué es la densidad de empaquetamiento. ¿Cuáles son las
+consecuencias de tener una menor densidad de empaquetamiento en un archivo
+directo?
+La densidad de empaquetamiento es la proporción de espacio del archivo asignado que en realidad almacena registros.
+Una menor densidad de empaquetamiento conlleva a tener menos probabilidad de overflow y más desperdicio de espacio.
+

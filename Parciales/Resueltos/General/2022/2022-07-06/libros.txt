@@ -1,0 +1,12 @@
+10 300 AA
+BB
+Prueba1
+20 300 AA
+BB
+Prueba1
+20 300 AA
+CC
+Prueba2
+30 400 BB
+CC
+Prueba3

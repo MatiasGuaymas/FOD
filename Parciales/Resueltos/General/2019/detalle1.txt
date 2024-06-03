@@ -1,0 +1,12 @@
+1 20 AA
+AAA
+Efectivo
+1 30 AA
+AAA
+Contado
+1 40 AA
+AAB
+Contado
+2 10 BB
+AAA
+Efectivo

@@ -1,0 +1,7 @@
+2020 1 2 3 10 2 3 Dinamita
+2020 1 2 3 1 5 0 Dinamita
+2020 1 2 3 4 3 1 Dinamita
+2020 1 2 3 7 0 3 Dinamita
+2020 1 3 2 3 6 0 Meme
+2020 2 3 2 3 6 0 Meme
+2021 1 2 3 10 2 3 Dinamita

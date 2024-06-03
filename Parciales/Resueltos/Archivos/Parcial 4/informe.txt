@@ -1,0 +1,15 @@
+Codigo de Sucursal: 1
+Identificacion del autor: 1
+ ISBN: 30 Total de ejemplares vendidos del libro: 2
+ Total de ejemplares vendidos del autor: 2
+Identificacion del autor: 2
+ ISBN: 31 Total de ejemplares vendidos del libro: 1
+ Total de ejemplares vendidos del autor: 1
+Total de ejemplares vendidos en la sucursal: 3
+Codigo de Sucursal: 2
+Identificacion del autor: 2
+ ISBN: 22 Total de ejemplares vendidos del libro: 1
+ ISBN: 23 Total de ejemplares vendidos del libro: 1
+ Total de ejemplares vendidos del autor: 2
+Total de ejemplares vendidos en la sucursal: 2
+TOTAL GENERAL DE EJEMPLARES VENDIDOS EN LA CADENA: 5

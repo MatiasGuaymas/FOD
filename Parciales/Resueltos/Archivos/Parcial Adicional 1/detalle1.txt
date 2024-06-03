@@ -1,0 +1,4 @@
+1 50 1 Matias
+2 30 1 Francisco
+3 25 0 Matheo
+4 40 1 Esteban

@@ -1,0 +1,2 @@
+1 30 Motor
+4 20 Ruedas
